@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DF31A08A2A3BB11300F7382C /* WatchOSNotes Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DF31A0892A3BB11300F7382C /* WatchOSNotes Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DF31A08A2A3BB11300F7382C /* NewNotes.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DF31A0892A3BB11300F7382C /* NewNotes.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DF31A08F2A3BB11300F7382C /* WatchOSNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31A08E2A3BB11300F7382C /* WatchOSNotesApp.swift */; };
 		DF31A0912A3BB11300F7382C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31A0902A3BB11300F7382C /* ContentView.swift */; };
 		DF31A0932A3BB11400F7382C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF31A0922A3BB11400F7382C /* Assets.xcassets */; };
 		DF31A0962A3BB11400F7382C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF31A0952A3BB11400F7382C /* Preview Assets.xcassets */; };
+		DFD292DC2A3CA50600B22EF8 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD292DB2A3CA50600B22EF8 /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +32,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				DF31A08A2A3BB11300F7382C /* WatchOSNotes Watch App.app in Embed Watch Content */,
+				DF31A08A2A3BB11300F7382C /* NewNotes.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,11 +41,12 @@
 
 /* Begin PBXFileReference section */
 		DF31A0832A3BB11300F7382C /* WatchOSNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchOSNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF31A0892A3BB11300F7382C /* WatchOSNotes Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchOSNotes Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF31A0892A3BB11300F7382C /* NewNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF31A08E2A3BB11300F7382C /* WatchOSNotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchOSNotesApp.swift; sourceTree = "<group>"; };
 		DF31A0902A3BB11300F7382C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF31A0922A3BB11400F7382C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF31A0952A3BB11400F7382C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DFD292DB2A3CA50600B22EF8 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				DF31A0832A3BB11300F7382C /* WatchOSNotes.app */,
-				DF31A0892A3BB11300F7382C /* WatchOSNotes Watch App.app */,
+				DF31A0892A3BB11300F7382C /* NewNotes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +80,8 @@
 		DF31A08D2A3BB11300F7382C /* WatchOSNotes Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				DFD292DA2A3CA4F500B22EF8 /* Model */,
+				DFD292D92A3CA4EB00B22EF8 /* View */,
 				DF31A08E2A3BB11300F7382C /* WatchOSNotesApp.swift */,
 				DF31A0902A3BB11300F7382C /* ContentView.swift */,
 				DF31A0922A3BB11400F7382C /* Assets.xcassets */,
@@ -92,6 +96,21 @@
 				DF31A0952A3BB11400F7382C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DFD292D92A3CA4EB00B22EF8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DFD292DA2A3CA4F500B22EF8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DFD292DB2A3CA50600B22EF8 /* Note.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +147,7 @@
 			);
 			name = "WatchOSNotes Watch App";
 			productName = "WatchOSNotes Watch App";
-			productReference = DF31A0892A3BB11300F7382C /* WatchOSNotes Watch App.app */;
+			productReference = DF31A0892A3BB11300F7382C /* NewNotes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -139,7 +158,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					DF31A0822A3BB11300F7382C = {
 						CreatedOnToolsVersion = 14.2;
@@ -194,6 +213,7 @@
 			files = (
 				DF31A0912A3BB11300F7382C /* ContentView.swift in Sources */,
 				DF31A08F2A3BB11300F7382C /* WatchOSNotesApp.swift in Sources */,
+				DFD292DC2A3CA50600B22EF8 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +261,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -299,6 +320,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -328,7 +350,6 @@
 				DEVELOPMENT_TEAM = CSDME8QJX3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = WatchOSNotes;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -337,7 +358,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rothermel1.WatchOSNotes.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = NewNotes;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -358,7 +379,6 @@
 				DEVELOPMENT_TEAM = CSDME8QJX3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = WatchOSNotes;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -367,7 +387,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rothermel1.WatchOSNotes.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = NewNotes;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -386,11 +406,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CSDME8QJX3;
 				INFOPLIST_KEY_CFBundleDisplayName = WatchOSNotes;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rothermel1.WatchOSNotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -402,11 +427,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CSDME8QJX3;
 				INFOPLIST_KEY_CFBundleDisplayName = WatchOSNotes;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rothermel1.WatchOSNotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
