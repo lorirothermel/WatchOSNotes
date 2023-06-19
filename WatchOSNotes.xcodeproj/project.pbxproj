@@ -12,6 +12,10 @@
 		DF31A0912A3BB11300F7382C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31A0902A3BB11300F7382C /* ContentView.swift */; };
 		DF31A0932A3BB11400F7382C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF31A0922A3BB11400F7382C /* Assets.xcassets */; };
 		DF31A0962A3BB11400F7382C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF31A0952A3BB11400F7382C /* Preview Assets.xcassets */; };
+		DF6D5F382A3F9B8D005228AB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6D5F372A3F9B8D005228AB /* DetailView.swift */; };
+		DF6D5F3A2A3FA493005228AB /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6D5F392A3FA493005228AB /* CreditsView.swift */; };
+		DF6D5F3D2A3FA558005228AB /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6D5F3C2A3FA558005228AB /* HeaderView.swift */; };
+		DF6D5F3F2A3FEC70005228AB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6D5F3E2A3FEC70005228AB /* SettingsView.swift */; };
 		DFD292DC2A3CA50600B22EF8 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD292DB2A3CA50600B22EF8 /* Note.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +50,10 @@
 		DF31A0902A3BB11300F7382C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF31A0922A3BB11400F7382C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF31A0952A3BB11400F7382C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF6D5F372A3F9B8D005228AB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		DF6D5F392A3FA493005228AB /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		DF6D5F3C2A3FA558005228AB /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		DF6D5F3E2A3FEC70005228AB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		DFD292DB2A3CA50600B22EF8 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,10 +88,10 @@
 		DF31A08D2A3BB11300F7382C /* WatchOSNotes Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				DF31A08E2A3BB11300F7382C /* WatchOSNotesApp.swift */,
+				DF6D5F3B2A3FA527005228AB /* Components */,
 				DFD292DA2A3CA4F500B22EF8 /* Model */,
 				DFD292D92A3CA4EB00B22EF8 /* View */,
-				DF31A08E2A3BB11300F7382C /* WatchOSNotesApp.swift */,
-				DF31A0902A3BB11300F7382C /* ContentView.swift */,
 				DF31A0922A3BB11400F7382C /* Assets.xcassets */,
 				DF31A0942A3BB11400F7382C /* Preview Content */,
 			);
@@ -98,9 +106,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DF6D5F3B2A3FA527005228AB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DF6D5F3C2A3FA558005228AB /* HeaderView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		DFD292D92A3CA4EB00B22EF8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DF31A0902A3BB11300F7382C /* ContentView.swift */,
+				DF6D5F372A3F9B8D005228AB /* DetailView.swift */,
+				DF6D5F392A3FA493005228AB /* CreditsView.swift */,
+				DF6D5F3E2A3FEC70005228AB /* SettingsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -211,8 +231,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF6D5F3F2A3FEC70005228AB /* SettingsView.swift in Sources */,
 				DF31A0912A3BB11300F7382C /* ContentView.swift in Sources */,
+				DF6D5F3D2A3FA558005228AB /* HeaderView.swift in Sources */,
+				DF6D5F382A3F9B8D005228AB /* DetailView.swift in Sources */,
 				DF31A08F2A3BB11300F7382C /* WatchOSNotesApp.swift in Sources */,
+				DF6D5F3A2A3FA493005228AB /* CreditsView.swift in Sources */,
 				DFD292DC2A3CA50600B22EF8 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
